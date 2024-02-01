@@ -1,0 +1,75 @@
+
+<div class="card" id="AnaCard">
+    <div class="card-content" id="card-header">
+      <div class="media">
+        <div class="media-content columns is-vcentered ">
+          <img src="/images/icon.gif">
+          <div class="columns">
+            <div class="column is-full">
+              <b>IP Adress : </b>
+              
+
+            </div>
+            <div class="column">
+              <% if (error) { %>
+          
+                <b style="color: white;">IP Error!</b>
+              <% } else { %>
+                <b style="color: white;"><%=data.ip %></b>
+              <% } %>
+              
+              <form action="/" method="get">
+                <input type="submit" value="BACK" id="query-button">
+              </form>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+  
+    </div>
+    <div class="block"></div>
+    
+    
+    <div class="card-content " id="card-content">
+  
+      <div class="media">
+        
+        <% if (error) { %>
+          <div class="columns">
+            <div class="column is-full">
+              <center>
+                <h1 class="animation"><b style="font-size: 24px;"> &nbsp>>> IP ERROR ! <<<&nbsp&nbsp&nbsp</b><br>  </h1>
+                <img src="/images/error.gif">
+              </center>
+            </div>
+          </div>
+          
+        <% } else { %>
+          <h1 class="animation">
+            >> continent_name:  <b style="color: white;"><%=data.continent_name %></b><br>    <br> 
+            >> country_code: <b style="color: white;"><%=data.country_code %></b><br>
+            >> country_name:<b style="color: white;"> <%=data.country_name %></b><br><br> 
+            >> region_name: <b style="color: white;"><%=data.region_name %></b><br>
+            >> city: <b style="color: white;"><%=data.city %></b><br><br> 
+            >> zip: <b style="color: white;"><%=data.zip %></b><br>
+            >> latitude: <b style="color: white;"><%=data.latitude %></b><br>
+            >> longitude:<b style="color: white;"> <%=data.longitude %></b><br>
+            >> location_capital: <b style="color: white;"><%=data.location.capital %></b><br><br> 
+            >> languages:<b style="color: white;"> <%=data.location.languages[0].name %></b><br><br> 
+            
+            </h1>
+        <% } %>
+    </div> 
+    
+
+
+  
+  
+  
+    
+  
+  
+  
+  </div>

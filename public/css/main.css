@@ -1,0 +1,135 @@
+
+body{
+    background-color: black;
+    background-image: url("/images/bg.gif");
+    min-width: 105vw;
+    min-height: 105vh;  
+}
+
+
+
+#imgcolumn{
+    max-width: max-content;
+    
+}
+.title{
+    color: grey;
+}
+
+#uploadButton{
+  min-width: 300px;
+  margin: 0 auto;
+}
+#fileBox{
+    margin: 0 auto;
+}
+
+#infoText{
+    margin: 0 auto;
+}
+
+
+#iconimg{
+    max-height: 13vh;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius:40% ;
+    border-bottom-left-radius: 0%;
+    box-shadow: 2px 25px 10px grey;
+}
+#anaDiv{
+    padding-top: 90px;
+}
+#AnaCard{
+    max-width: 500px;
+    min-height: 500px;
+    background: rgba(0,0,0,0.5);
+    
+    
+}
+#card-header{
+    background: rgba(0,0,0,0.5);
+    border-color: #00C101;
+    border-style: solid;
+}
+#card-content{
+    background: rgba(0,0,0,0.5);
+    border-color: #00C101;
+    border-style: solid;
+}
+#ip-input{
+    background: rgba(0,0,0,0.5);
+    border-color: #00C101;
+    border-style: solid;
+    border-width: 2px;
+    max-height: 30px;
+    color: #00C101;
+    border-radius: 0px;
+    font-size:18px;
+    font-weight: bold;
+}
+b{
+    color: #00C101;
+}
+#query-button{
+    background: rgba(0,0,0,0.5);
+    border-color: #00C101;
+    border-style: solid;
+    border-width: 2px;
+    max-height: 40px;
+    min-height: 30px;
+    color: #00C101;
+    border-radius: 0px;
+    font-size:18px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+#query-button:hover span {
+    display:none
+  }
+  
+#query-button:hover:before {
+    content:"Logout!";
+    color: white;
+}
+#query-button:hover{
+    background-color: red;
+    border-color:red;
+    color: black;
+    
+
+}
+
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.animation { 
+  color:#00C101;
+	font: bold 111% Consolas, Monaco, monospace;
+	width: 450px;
+	width: 450px; /* Ne kadar yazı yazacaksanız karakter sayacında sayıp buraya karakter sayısı kadar yazın. */
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 7s steps(200, end), /* # Adımlar = # Karakter Sayısı */
+	           blink-caret 0.5s step-end infinite alternate;
+}
+
+
+@media (max-width:1000px) {
+    #anaDiv{
+        width: 100vw;
+    }
+    #AnaCard{
+        border-bottom-right-radius: 0px;
+        background-color: #202020;
+    }
+    #icerikDiv {         
+        position: relative;
+        left: 0px;
+        width: 100vw;
+        
+    
+    }
+ }
